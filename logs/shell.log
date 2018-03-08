@@ -1,0 +1,8 @@
+Last login: Thu Mar  8 11:29:45 2018 from 122.233.34.60
+
+Welcome to Alibaba Cloud Elastic Compute Service !
+
+[37;40m[[32;40mroot[37;40m@iZ28yvuwds4Z [35;40m~[0m]# cd /data/wwwroot/meepo.com.cn/addons/
+[37;40m[[32;40mroot[37;40m@iZ28yvuwds4Z [35;40maddons[0m]# rm -rf .//shibida_mfans/test.php
+[37;40m[[32;40mroot[37;40m@iZ28yvuwds4Z [35;40maddons[0m]# exit
+logout

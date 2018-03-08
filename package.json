@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/meepobrother/we7-meepo-hunli/issues"
   },
-  "homepage": "https://github.com/meepobrother/we7-meepo-hunli#readme"
+  "homepage": "https://github.com/meepobrother/we7-meepo-hunli#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sftp": "^0.1.5",
+    "gulp-ssh": "^0.7.0"
+  }
 }

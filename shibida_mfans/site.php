@@ -5,6 +5,7 @@
  * @author imeepos
  * @url http://bbs.we7.cc
  */
+
 defined('IN_IA') or exit('Access Denied');
 define("DEBUG", true);
 // ini_set('display_errors', true);
