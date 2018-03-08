@@ -1,0 +1,14 @@
+<div *ngIf="app.props">
+    <div class="swiper-container" [swiper]="app.props.home.swiper.config" [(index)]="app.props.home.swiper.index">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" *ngFor="let item of app.props.home.swiper.items">
+                <img [we7Img]="item.src">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<div class="home-content">
+
+</div>
+<footer *ngIf="app.props" [props]="app.props.footers"></footer>

@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let item of list">{{item.title}}</li>
+</ul>
+
+<empty *ngIf="list.length === 0"></empty>

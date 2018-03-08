@@ -1,0 +1,71 @@
+<div class="userinfo" *ngIf="app.userinfo">
+    <div class="userinfo-group">卡号：{{app.mycard.cardsn}}</div>
+    <div class="userinfo-time">
+        <div class="userinfo-endtime">截止日期：{{app.mycard.endtime}}</div>
+    </div>
+    <div class="userinfo-tabs">
+        <div class="userinfo-tabs-item" (click)="toPage('qrcodepay')">付款码</div>
+        <div class="userinfo-tabs-divider"></div>
+        <div class="userinfo-tabs-item" (click)="toPage('qrcodexiche')">洗车码</div>
+        <div class="userinfo-tabs-divider"></div>
+        <div class="userinfo-tabs-item" (click)="toPage('qrcodejifen')">积分码</div>
+    </div>
+</div>
+
+<div class="userinfo-content" *ngIf="app.userinfo">
+    <div class="form-row">
+        <a class="weui-cell weui-cell_access" (click)="toPage('money')" href="javascript:;">
+            <div class="weui-cell__bd">
+                <p>我的余额</p>
+            </div>
+            <div class="weui-cell__ft">{{app.userinfo.credit2}}</div>
+        </a>
+        <a class="weui-cell weui-cell_access" (click)="toPage('recharge')" href="javascript:;">
+            <div class="weui-cell__bd">
+                <p>我的积分</p>
+            </div>
+            <div class="weui-cell__ft">{{app.userinfo.credit1}}</div>
+        </a>
+        <a class="weui-cell weui-cell_access" (click)="toPage('xiche')" href="javascript:;">
+            <div class="weui-cell__bd">
+                <p>洗车次数</p>
+            </div>
+            <div class="weui-cell__ft">{{app.mycard?.nums}}次</div>
+        </a>
+        <a class="weui-cell weui-cell_access" (click)="toPage('coupon')" href="javascript:;">
+            <div class="weui-cell__bd">
+                <p>我的卡券</p>
+            </div>
+            <div class="weui-cell__ft">{{app.total}}张</div>
+        </a>
+    </div>
+    <div class="form-row">
+        <a class="weui-cell weui-cell_access" (click)="toPage('message')" href="javascript:;">
+            <div class="weui-cell__bd">
+                <p>我的消息</p>
+            </div>
+            <div class="weui-cell__ft">{{app.notice_count}}</div>
+        </a>
+    </div>
+    <div class="form-row">
+        <a class="weui-cell weui-cell_access" (click)="toPage('car')" href="javascript:;">
+            <div class="weui-cell__bd">
+                <p>我的汽车</p>
+            </div>
+            <div class="weui-cell__ft"></div>
+        </a>
+        <a class="weui-cell weui-cell_access" (click)="toPage('share')" href="javascript:;">
+            <div class="weui-cell__bd">
+                <p>我的推广</p>
+            </div>
+            <div class="weui-cell__ft"></div>
+        </a>
+        <a class="weui-cell weui-cell_access" (click)="toPage('myinfo')" href="javascript:;">
+            <div class="weui-cell__bd">
+                <p>我的资料</p>
+            </div>
+            <div class="weui-cell__ft"></div>
+        </a>
+    </div>
+</div>
+<footer *ngIf="app.props" [props]="app.props.footers"></footer>

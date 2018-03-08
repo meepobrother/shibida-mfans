@@ -1,0 +1,17 @@
+<div class="form-row">
+    <div class="weui-cell" (click)="toDetail(item)" *ngFor="let item of list">
+        <div class="weui-cell__hd" *ngIf="item.thumb.length > 0">
+            <img [src]="item.thumb" style="width:20px;margin-right:5px;display:block">
+        </div>
+        <div class="weui-cell__bd">
+            <p>{{item.title}}</p>
+        </div>
+        <div class="weui-cell__ft">
+            <span *ngIf="''+item.is_new == '1'" style="color: red;">新</span>
+        </div>
+    </div>
+</div>
+
+<empty *ngIf="list.length === 0"></empty>
+
+<footer *ngIf="app.props" [props]="app.props.footers"></footer>

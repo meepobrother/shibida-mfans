@@ -1,0 +1,22 @@
+<div class="form-row">
+    <div class="weui-cell">
+        <div class="weui-cell__hd">
+            <label class="weui-label">姓名</label>
+        </div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" [(ngModel)]="app.userinfo.realname" type="text" placeholder="请输入姓名">
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd">
+            <label class="weui-label">电话</label>
+        </div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" [(ngModel)]="app.userinfo.mobile" type="mobile" placeholder="请输入电话">
+        </div>
+    </div>
+</div>
+
+<div class="weui-btn-area">
+    <a class="weui-btn weui-btn_primary" href="javascript:" (click)="save()">确定</a>
+</div>

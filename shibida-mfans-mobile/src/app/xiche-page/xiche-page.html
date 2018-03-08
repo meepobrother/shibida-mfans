@@ -1,0 +1,11 @@
+<div class="form-row">
+    <a class="weui-cell weui-cell_access" *ngFor="let item of list" (click)="payXiche(item)" href="javascript:;">
+        <div class="weui-cell__bd">
+            <p>{{item.title}}</p>
+            <p style="color: red;">{{item.money}}元</p>
+        </div>
+        <div class="weui-cell__ft">立即购买</div>
+    </a>
+</div>
+
+<empty *ngIf="list.length === 0"></empty>

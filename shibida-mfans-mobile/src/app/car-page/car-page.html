@@ -1,0 +1,11 @@
+<ul>
+    <li *ngFor="let item of list">
+        {{item.car_num}} {{item.realname}} {{item.mobile}}
+    </li>
+</ul>
+
+<empty *ngIf="list.length === 0"></empty>
+
+<div class="weui-btn-area">
+    <a class="weui-btn weui-btn_primary" href="javascript:" (click)="addCar()">添加</a>
+</div>

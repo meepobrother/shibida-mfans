@@ -1,0 +1,18 @@
+<div class="recharge-content">
+    <ul *ngIf="activeTab.code === 'goods'">
+        <li *ngFor="let item of list;index as i;">
+            <div class="goods-info">
+                <div class="goods-title">{{item.title}}</div>
+                <div class="goods-desc" [innerHTML]="item.description"></div>
+                <div class="goods-price">{{item.credit}}积分</div>
+            </div>
+            <div class="goods-recharge" (click)="rechargeGoods(item,i)">兑换</div>
+        </li>
+    </ul>
+    <empty *ngIf="list.length === 0"></empty>
+</div>
+
+
+<footer *ngIf="app.props" [props]="app.props.footers"></footer>
+
+<dialog *ngIf="showDialog" [props]="dialog"></dialog>

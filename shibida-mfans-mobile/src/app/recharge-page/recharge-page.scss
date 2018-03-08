@@ -1,0 +1,57 @@
+.recharge-content {
+    flex: 1;
+    overflow: auto;
+    max-width: 100%;
+    ul {
+        display: flex;
+        flex-direction: column;
+        li {
+            display: flex;
+            flex-direction: row;
+            background: #fff;
+            justify-content: center;
+            align-items: center;
+            padding: 5px 10px;
+            .goods-price {
+                font-size: 14px;
+                color: red;
+            }
+            .goods-desc {
+                font-size: 12px;
+                color: gray;
+            }
+            .goods-info {
+                flex: 1;
+            }
+        }
+    }
+}
+
+.goods-recharge {
+    background: red;
+    color: #fff;
+    padding: 2px 7px;
+    border-radius: 10px;
+    font-size: 12px;
+    &:hover {
+        opacity: .7;
+    }
+}
+
+.rechare-tabs {
+    display: flex;
+    flex-direction: row;
+    height: 44px;
+    line-height: 44px;
+    .rechare-tabs-item {
+        height: 44px;
+        line-height: 44px;
+        flex: 1;
+        background: gray;
+        color: #fff;
+        text-align: center;
+        &.active{
+            opacity: .8;
+        }
+    }
+}
